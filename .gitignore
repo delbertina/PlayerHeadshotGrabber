@@ -1,0 +1,5 @@
+novaskin-download/*
+image-output/*
+.idea/
+geckodriver.log
+venv/
