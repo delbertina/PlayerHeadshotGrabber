@@ -4,6 +4,7 @@ Built using:
 - Python 3.9
 - Selenium Firefox
 - Pillow (PIL Fork)
+- Pyperclip
 
 Input file = one username per line.
 #

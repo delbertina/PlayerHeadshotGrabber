@@ -8,12 +8,13 @@ import urllib.request
 import time
 from PIL import Image, ImageOps
 from tkinter.filedialog import askopenfilename
+import pyperclip
 
 
 def pose_character():
     # Somewhat arbitrary numbers for rotation sliders
-    rotate_x = -6
-    rotate_y = 15
+    rotate_x = -1
+    rotate_y = 13
     # Click the pose tab
     nav_pose_button = driver.find_element_by_css_selector("#pose")
     nav_pose_button.click()
@@ -35,7 +36,9 @@ def prepare_render(input_username):
     skin_search_box = driver.find_element_by_id("gallery-search")
     skin_search_box.send_keys(Keys.CONTROL, "a")
     skin_search_box.send_keys(Keys.DELETE)
-    skin_search_box.send_keys("@" + input_username)
+    # Use the clipboard to avoid pressing the shift button
+    pyperclip.copy("@" + input_username)
+    skin_search_box.send_keys(Keys.CONTROL, 'v')
     skin_search_box.send_keys(Keys.RETURN)
     # Wait until the search result return
     wait = WebDriverWait(driver, 10)
