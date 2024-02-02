@@ -6,6 +6,14 @@ Built using:
 - Pillow (PIL Fork)
 - Pyperclip
 
+Output
+
+<img src="https://github.com/delbertina/PlayerHeadshotGrabber/assets/6349928/5b6792ed-a492-460d-9763-9ab01c827ded" width="400"/>
+
+Published Results
+
+<img src="https://github.com/delbertina/PlayerHeadshotGrabber/assets/6349928/bcdf6013-01f1-4b49-bac6-9722a3319942" width="400"/>
+
 Input file = one username per line.
 #
 **Why I Made This**
